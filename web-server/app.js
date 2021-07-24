@@ -56,5 +56,6 @@ app.get("/weather", (req, res) => {
     //res.send("hi");
   }
 });
+const port=process.env.PORT||3000;
 app.get("*", (req, res) => res.render("404"));
-app.listen(3000, () => console.log("server started"));
+app.listen(port, () => console.log("server started"));
