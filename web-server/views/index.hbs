@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    {{>header}}
+   <h1> Weather page</h1>
+<div class="container">
+<div class="alert alert-dark" role="alert">
+   <div class="row align-items-start">
+    
+   <div style=" margin:0 300px ;"class="col">
+
+<form class="input-group">
+  <input style="display: block;
+
+    width:300px; " type="search" aria-label="Search"
+   placeholder="location"/>
+  <button type="submit" class="btn btn-outline-primary">search</button>
+</form>
+  </div>
+   </div>
+
+
+</div>
+<div>
+<p id="temp" class="lead" style="text-align: center;"></p>
+<p class="lead" style="text-align: center;" id="feelsLike">  </p>
+
+
+</div>
+<script src="/js/script.js"></script>
+   {{>boot}}
+   {{>footer}}
+</body>
+
+</html>
